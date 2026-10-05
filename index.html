@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <p class="eyebrow">Global time</p>
+        <h1>World Clock</h1>
+      </header>
+
+      <section class="clock-grid" aria-live="polite">
+        <article class="clock-card featured" data-timezone="Europe/London">
+          <div class="city-row">
+            <span class="city">London</span>
+            <span class="tz-label">GMT/BST</span>
+          </div>
+          <div class="time" id="time-Europe/London">--:--:--</div>
+          <div class="date" id="date-Europe/London">--</div>
+        </article>
+
+        <article class="clock-card" data-timezone="UTC">
+          <div class="city-row">
+            <span class="city">UTC</span>
+            <span class="tz-label">Coordinated</span>
+          </div>
+          <div class="time" id="time-UTC">--:--:--</div>
+          <div class="date" id="date-UTC">--</div>
+        </article>
+
+        <article class="clock-card" data-timezone="America/New_York">
+          <div class="city-row">
+            <span class="city">New York</span>
+            <span class="tz-label">EST/EDT</span>
+          </div>
+          <div class="time" id="time-America/New_York">--:--:--</div>
+          <div class="date" id="date-America/New_York">--</div>
+        </article>
+
+        <article class="clock-card" data-timezone="Asia/Tokyo">
+          <div class="city-row">
+            <span class="city">Tokyo</span>
+            <span class="tz-label">JST</span>
+          </div>
+          <div class="time" id="time-Asia/Tokyo">--:--:--</div>
+          <div class="date" id="date-Asia/Tokyo">--</div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
